@@ -22,6 +22,8 @@
         "drupal/core-recommended": "^9.3",
         "drupal/ds": "^3.13",
         "drupal/field_group": "^3.2",
+        "drupal/rename_admin_paths": "^2.1",
+        "drupal/require_login": "^2.4",
         "drupal/view_custom_table": "^2.0",
         "drush/drush": "^11.0"
     },

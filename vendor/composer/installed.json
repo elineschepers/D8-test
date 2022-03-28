@@ -1860,6 +1860,112 @@
             "install-path": "../../web/modules/contrib/field_group"
         },
         {
+            "name": "drupal/rename_admin_paths",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rename_admin_paths.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rename_admin_paths-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "7ad656f5cc96778c396b0162d182a474f705d346"
+            },
+            "require": {
+                "drupal/core": "^8.7|^9.0",
+                "php": "^7.1|^8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1637061021",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Apard",
+                    "homepage": "https://www.drupal.org/user/410831"
+                },
+                {
+                    "name": "slootjes",
+                    "homepage": "https://www.drupal.org/user/3516667"
+                }
+            ],
+            "description": "The purpose of this module is to secure drupal backend by renaming the admin paths.",
+            "homepage": "https://www.drupal.org/project/rename_admin_paths",
+            "keywords": [
+                "admin",
+                "guess",
+                "override",
+                "protect",
+                "security"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/rename_admin_paths"
+            },
+            "install-path": "../../web/modules/contrib/rename_admin_paths"
+        },
+        {
+            "name": "drupal/require_login",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/require_login.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/require_login-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "b47b0bde6925d83fe48b835bfd95ed35296b5897"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1615474748",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "robphillips",
+                    "homepage": "https://www.drupal.org/user/459772"
+                }
+            ],
+            "description": "Provides catch-all solution to require user authentication on pages.",
+            "homepage": "https://www.drupal.org/project/require_login",
+            "support": {
+                "source": "https://git.drupalcode.org/project/require_login"
+            },
+            "install-path": "../../web/modules/contrib/require_login"
+        },
+        {
             "name": "drupal/view_custom_table",
             "version": "2.0.0",
             "version_normalized": "2.0.0.0",
