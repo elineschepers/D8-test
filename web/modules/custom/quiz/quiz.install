@@ -1,0 +1,131 @@
+<?php
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function quiz_schema(){
+    $schema['quiz_questions'] = array(
+        'description' => 'The table for storing all questions.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for a question',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'question' => array(
+                'description' => 'Question',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+           'position' => array(
+                'description' => 'The position of the question between other questions',
+                'type' => 'int',
+                'length' => 4,
+                'not null' => TRUE,
+            ),
+           'question_type' => array(
+                'description' => '1: text, 2: textarea, 3: checkboxes, 4: radio buttons',
+                'type' => 'int',
+                'length' => 4,
+                'not null' => TRUE,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+
+    $schema['quiz_answers'] = array(
+        'description' => 'The table for storing possible answers to questions of type 3 and 4.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for an answer',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'answer' => array(
+                'description' => 'Answer',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+           'position' => array(
+                'description' => 'The position of the answer between other answers',
+                'type' => 'int',
+                'length' => 4,
+                'not null' => TRUE,
+            )
+        ),
+        'primary key' => array('id'),
+    );
+
+    $schema['quiz_users'] = array(
+        'description' => 'The table for storing the user data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for user',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'name' => array(
+                'description' => 'User name',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+           'email' => array(
+                'description' => 'User email',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+
+    $schema['quiz_user_answers'] = array(
+        'description' => 'The table for storing the students data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for this answer',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'question_id' => array(
+                'description' => 'The id of the linked question',
+                'type' => 'int',
+                'length' => 11,
+                'not null' => TRUE,
+            ),
+           'user_id' => array(
+                'description' => 'The id of the linked user',
+                'type' => 'int',
+                'length' => 11,
+                'not null' => TRUE,
+            ),
+            'answer' => array(
+                'description' => 'the answer',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+            ),
+            'created_at' => array(
+                'description' => 'Timestamp when answered',
+                'type' => 'varchar',
+                'mysql_type' => 'datetime',
+                'not null' => FALSE,
+                'default' => NULL,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

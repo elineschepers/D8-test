@@ -1,8 +1,8 @@
 layout_twocol_section:
   label: 'Two column'
-  path: layouts/twocol_section
+  path: layouts/bs_row
   template: layout--twocol-section
-  library: layout_builder/twocol_section
+  library: layout_builder/bs_row
   class: '\Drupal\layout_builder\Plugin\Layout\TwoColumnLayout'
   category: 'Columns: 2'
   default_region: first

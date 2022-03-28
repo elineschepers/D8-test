@@ -15,7 +15,7 @@ libraries-override:
   layout_builder/twocol_section:
     css:
       theme:
-        layouts/twocol_section/twocol_section.css: layouts/twocol_section/twocol_section.css
+        layouts/twocol_section/twocol_section.css: layouts/bs_row/bs_row.css
   layout_builder/threecol_section:
     css:
       theme:

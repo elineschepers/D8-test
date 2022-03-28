@@ -6,6 +6,13 @@ proxy:
   appserver:
     - bs-build.lndo.site
 services:
+  myservice:
+    type: phpmyadmin
+    hosts:
+      - mysql57
+    mysql57:
+      type: mysql:5.7
+
   appserver:
     build_internal:
       - >-

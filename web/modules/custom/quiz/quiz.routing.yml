@@ -1,0 +1,7 @@
+quiz.start:
+  path: '/cat-quiz'
+  defaults:
+    _form: '\Drupal\quiz\Form\QuizForm'
+    _title: 'Which cat are you?'
+  requirements:
+    _access: 'TRUE'

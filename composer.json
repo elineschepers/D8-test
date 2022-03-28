@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^9.3",
         "drupal/ds": "^3.13",
         "drupal/field_group": "^3.2",
+        "drupal/view_custom_table": "^2.0",
         "drush/drush": "^11.0"
     },
     "conflict": {

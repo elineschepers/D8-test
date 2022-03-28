@@ -1,0 +1,5 @@
+name: ww_bootstrap4_layouts
+type: module
+description: bootstrap4 layouts
+package: webwash
+core_version_requirement: ^9 || ^10
