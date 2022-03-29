@@ -50,11 +50,12 @@
 - verander versie in composer.json
 
 ### issues met SASS?
+'''
 1. npm uninstall node-sass
 2. npm uninstall sass-loader
 3. npm install sass
 4. npm install sass-loader
-
+'''
 ### bekijk tables in database
 1. lando mysql
 2. use drupal8;
