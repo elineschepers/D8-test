@@ -6,7 +6,7 @@
 ### User
 - phishing test: ```/phishing/usercredentials```
 ### Admin
-- login: /administrator/login
+- login: ```/administrator/login```
 - view all phishing users: ```/phishing/users```
 - view all phishing answers: ```/phishing/questions/answers```
 - phishing test: ```/phishing/usercredentials```
