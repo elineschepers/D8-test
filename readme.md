@@ -1,5 +1,16 @@
 # Phishing calculator
 
+
+## URL's
+
+### User
+- phishing test: ```/phishing/usercredentials```
+### Admin
+- login: /administrator/login
+- view all phishing users: ```/phishing/users```
+- view all phishing answers: ```/phishing/questions/answers```
+- phishing test: ```/phishing/usercredentials```
+
 ## Technische informatie over het project
 
 ### Project maken in Drupal
@@ -36,12 +47,6 @@
 ## toegevoegde modules
 - https://www.drupal.org/project/view_custom_table
 
-## URL's
-
-### User
-
-### Admin
-- login: /administrator/login
 
 ## Mogelijke problemen
 
